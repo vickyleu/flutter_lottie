@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.View;
 import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.airbnb.lottie.LottieProperty;
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.value.LottieValueCallback;
@@ -79,9 +80,9 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
         maxFrame = animationView.getMaxFrame();
 
         if(reverse) {
-            animationView.setRepeatMode(2);
+            animationView.setRepeatMode(LottieDrawable.REVERSE);
         } else {
-            animationView.setRepeatMode(1);
+            animationView.setRepeatMode(LottieDrawable.RESTART);
         }
 
         if(autoPlay) {

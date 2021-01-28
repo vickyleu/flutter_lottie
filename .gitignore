@@ -3,5 +3,7 @@
 .idea
 .packages
 .pub/
-
+**pubspec.lock
+**flutter-plugins-dependencies
+**.last_build_id
 build/
